@@ -1,4 +1,7 @@
 == README
 
-=To Do List 
+=To Do List
 * This To Do List app is running on Ruby 2.2.0 and Rails 4.2.0
+
+===Objects
+* I created a todo_list item which has 
