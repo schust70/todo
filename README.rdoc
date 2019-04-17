@@ -1,7 +1,21 @@
 == README
 
-=To Do List
+=To Do List App
 * This To Do List app is running on Ruby 2.2.0 and Rails 4.2.0
 
 ===Objects
-* I created a todo_list item which has 
+* I created two objects for this assignment, todo_list and todo_item.
+* todo_list has two variables, a title and description. This gives the individual to do list a title and a description if necessary.
+* todo_item has a string variable (content), a reference to the todo_list index that it belongs to, a completed_at variable as well as a date_time variable.
+
+===CSS
+* Most of the large CSS structures was borrowed from a github user who created a similar to do list app.
+However I modified a lot of the small details to make it my own. To begin, I changed the background color to a gradient of my choice.
+I changed the overall font of the app, added padding where I deemed it necessary and increased font sizes to improve readability, for example.
+
+==Controllers
+*The todo_item controller has three main functions. It creates a todo_item in a todo_list, it can destroy a todo_item, and it can check to see if the todo_item was completed.
+*The todo_list controller makes a new todo_list, creates it with the title and description that the user inputs, can update the todo_list title/description and also destroy a todo_list object.
+*I had to make a third controller file to make sure I did not get the "uninitialized constant ApplicationRecord" error. (Found out I needed this from a quick Google search)
+
+To help me set up routes and to make sure the app flowed correctly, I followed a brief tutorial on to do list apps. It helped immensely and taught me a lot on how the files interact to create the whole application.
